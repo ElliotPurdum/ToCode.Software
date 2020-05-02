@@ -7,6 +7,7 @@ namespace HelloWorld
         public void Start()
         {
             Console.WriteLine("What is your name?");
+            Console.WriteLine("What is the average velocity of a swallow?");
             var name = Console.ReadLine();
             Console.WriteLine($"Do you want to go on a quest, {name}?");
             var response = Console.ReadLine();
