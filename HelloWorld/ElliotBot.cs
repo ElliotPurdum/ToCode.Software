@@ -7,18 +7,22 @@ namespace HelloWorld
         public void Start()
         {
             Console.WriteLine("What is your name?");
-            Console.WriteLine("What is the average velocity of a swallow?");
             var name = Console.ReadLine();
             Console.WriteLine($"Do you want to go on a quest, {name}?");
             var response = Console.ReadLine();
-            if (response.ToLower() == "yes")
+            switch (response.ToLower())
             {
-                Yes();
+                case "yes":
+                    Yes();
+                    break;
+                case "no":
+                    No();
+                    break;
+                default:
+                    Console.WriteLine("I don't understand.");
+                    break;
             }
-            else
-            {
-                No();
-            }
+            
         }
 
         static void Yes()
