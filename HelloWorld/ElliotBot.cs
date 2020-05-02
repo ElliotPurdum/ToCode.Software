@@ -42,7 +42,7 @@ namespace HelloWorld
             }
             else
             {
-                Console.WriteLine("Fine. No quests today.");
+                Console.WriteLine("Fine. Leave. I don't want to see you again.");
             }
         }
     }
